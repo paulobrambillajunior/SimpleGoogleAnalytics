@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BDD17F11E79E69B004D8D45 /* ItemGA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD17EE1E79E69B004D8D45 /* ItemGA.m */; };
+		1BDD17F21E79E69B004D8D45 /* SimpleGoogleAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD17F01E79E69B004D8D45 /* SimpleGoogleAnalytics.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1BDD17DF1E79E665004D8D45 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1BDD17E11E79E665004D8D45 /* libSimpleGoogleAnalytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSimpleGoogleAnalytics.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BDD17ED1E79E69B004D8D45 /* ItemGA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemGA.h; sourceTree = "<group>"; };
+		1BDD17EE1E79E69B004D8D45 /* ItemGA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemGA.m; sourceTree = "<group>"; };
+		1BDD17EF1E79E69B004D8D45 /* SimpleGoogleAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleGoogleAnalytics.h; sourceTree = "<group>"; };
+		1BDD17F01E79E69B004D8D45 /* SimpleGoogleAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleGoogleAnalytics.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BDD17DE1E79E665004D8D45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BDD17D81E79E665004D8D45 = {
+			isa = PBXGroup;
+			children = (
+				1BDD17E31E79E665004D8D45 /* SimpleGoogleAnalytics */,
+				1BDD17E21E79E665004D8D45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BDD17E21E79E665004D8D45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BDD17E11E79E665004D8D45 /* libSimpleGoogleAnalytics.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BDD17E31E79E665004D8D45 /* SimpleGoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				1BDD17ED1E79E69B004D8D45 /* ItemGA.h */,
+				1BDD17EE1E79E69B004D8D45 /* ItemGA.m */,
+				1BDD17EF1E79E69B004D8D45 /* SimpleGoogleAnalytics.h */,
+				1BDD17F01E79E69B004D8D45 /* SimpleGoogleAnalytics.m */,
+			);
+			path = SimpleGoogleAnalytics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BDD17E01E79E665004D8D45 /* SimpleGoogleAnalytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BDD17EA1E79E665004D8D45 /* Build configuration list for PBXNativeTarget "SimpleGoogleAnalytics" */;
+			buildPhases = (
+				1BDD17DD1E79E665004D8D45 /* Sources */,
+				1BDD17DE1E79E665004D8D45 /* Frameworks */,
+				1BDD17DF1E79E665004D8D45 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleGoogleAnalytics;
+			productName = SimpleGoogleAnalytics;
+			productReference = 1BDD17E11E79E665004D8D45 /* libSimpleGoogleAnalytics.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BDD17D91E79E665004D8D45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = IESB;
+				TargetAttributes = {
+					1BDD17E01E79E665004D8D45 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2R3CT5JDZU;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1BDD17DC1E79E665004D8D45 /* Build configuration list for PBXProject "SimpleGoogleAnalytics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1BDD17D81E79E665004D8D45;
+			productRefGroup = 1BDD17E21E79E665004D8D45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BDD17E01E79E665004D8D45 /* SimpleGoogleAnalytics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BDD17DD1E79E665004D8D45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BDD17F11E79E69B004D8D45 /* ItemGA.m in Sources */,
+				1BDD17F21E79E69B004D8D45 /* SimpleGoogleAnalytics.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1BDD17E81E79E665004D8D45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1BDD17E91E79E665004D8D45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BDD17EB1E79E665004D8D45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2R3CT5JDZU;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1BDD17EC1E79E665004D8D45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2R3CT5JDZU;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BDD17DC1E79E665004D8D45 /* Build configuration list for PBXProject "SimpleGoogleAnalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BDD17E81E79E665004D8D45 /* Debug */,
+				1BDD17E91E79E665004D8D45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BDD17EA1E79E665004D8D45 /* Build configuration list for PBXNativeTarget "SimpleGoogleAnalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BDD17EB1E79E665004D8D45 /* Debug */,
+				1BDD17EC1E79E665004D8D45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BDD17D91E79E665004D8D45 /* Project object */;
+}
