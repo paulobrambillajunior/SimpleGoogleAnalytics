@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "itemGA.h"
 
-typedef void(^CallBackSend) (NSURLResponse * _Nullable response, NSError * _Nullable * _Nullable erro);
-typedef void(^CallBackError) (NSError *_Nullable * _Nullable erro);
+typedef void(^CallBackSend) (NSData *_Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable erro);
+typedef void(^CallBackError) (NSError *_Nullable erro);
 
 @interface SimpleGoogleAnalytics : NSObject
 
@@ -135,7 +135,8 @@ typedef NS_ENUM(NSInteger, HitTypeEnum){
     SCREEN_VIEW_HIT,
     SOCIAL_HIT,
     TRANSACTION_HIT,
-    TIMING_HIT
+    TIMING_HIT,
+    HIT_TYPE_ENUM_COUNT
 };
 
 NS_ASSUME_NONNULL_BEGIN
@@ -146,10 +147,9 @@ NS_ASSUME_NONNULL_BEGIN
  @param tid The ID that distinguishes the Google Analytics property that should receive the data.
  @param cid A unique code for a specific user.
  @param hitTypeEnum The type of interaction collected for a specific user.
- @param callBack Callback with NSError.
- @return Objetc to SimpleGoogleAnatics instantiated.
+  @return Objetc to SimpleGoogleAnatics instantiated.
  */
-+(instancetype)startShared: (NSString*) tid withCid: (NSString*) cid andHitType: (NSInteger) hitTypeEnum withCallBack: (CallBackError) callBack;
++(instancetype)startSharedWithTid: (NSString*) tid withCid: (NSString*) cid andHitType: (NSInteger) hitTypeEnum;
 
 /**
  Send 1 lote to Google Analytics metrics with you define.
@@ -177,15 +177,28 @@ NS_ASSUME_NONNULL_BEGIN
  @param tid The ID that distinguishes the Google Analytics property that should receive the data.
  @param cid A unique code for a specific user.
  @param hitTypeEnum The type of interaction collected for a specific user.
- @param callBack Callback with NSError.
- */
--(void) setRequiredParameters: (NSString*) tid withCid: (NSString*) cid andHitType: (NSInteger) hitTypeEnum withCallBack: (CallBackError) callBack;
+*/
+-(void) setRequiredParameters: (NSString*) tid withCid: (NSString*) cid andHitType: (NSInteger) hitTypeEnum;
 
 /**
  Method for set a Hit Type with HitTypeEnum.
 
  @param hitTypeEnum Enum value. Example: EVENT_HIT.
- */
+*/
 -(void) changeHitType:(NSInteger) hitTypeEnum;
+
+/**
+ Start session in Google Analtytics.
+
+ @param callBack Return NSURLResponse and NSError.
+*/
+-(void) startSession: (CallBackSend) callBack;
+
+/**
+ End session in Google Analtytics.
+
+ @param callBack Return NSURLResponse and NSError.
+*/
+-(void) endSession: (CallBackSend) callBack;
 NS_ASSUME_NONNULL_END
 @end
