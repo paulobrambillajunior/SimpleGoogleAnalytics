@@ -7,7 +7,7 @@
 //
 
 #import "SimpleGoogleAnalytics.h"
-
+#import <UIKit/UIDevice.h>
 
 @interface SimpleGoogleAnalytics()
 /* Tracking ID / Web Property ID
@@ -40,6 +40,7 @@
 @property (strong, nonatomic) NSArray<NSString*> *hitsType;
 @property (nonatomic) BOOL isStartSession;
 @property (nonatomic) BOOL isEndSession;
+@property (nonatomic) BOOL isCollect;
 @end
 
 @implementation SimpleGoogleAnalytics
@@ -60,7 +61,8 @@ static const int MAX_LIMIT_PAYLOAD_DATA              = 8192;
 
 static NSDictionary<NSNumber*,NSString*> *paramtersGA;
 
-static NSString *url = @"https://www.google-analytics.com/collect";
+static NSString *urlCollect = @"https://www.google-analytics.com/collect";
+static NSString *urlBatch = @"https://www.google-analytics.com/batch";
 static NSString *version = @"1";
 NSUInteger bytes;
 
@@ -551,6 +553,7 @@ NSUInteger bytes;
     NSDictionary *dictionary;
     NSError *error;
     NSMutableArray<ItemGA *> *array = [NSMutableArray new];
+    self.isCollect = NO;
     
     if (!parameters){
         dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"Parameters not is null.",  [NSNumber numberWithLong: NSFormattingError], nil];
@@ -612,10 +615,14 @@ NSUInteger bytes;
 
 -(NSMutableURLRequest*) configRequestWithArray: (NSArray<ItemGA *> *) parameters{
     NSMutableURLRequest *request = [NSMutableURLRequest new];
-    [request setURL: [NSURL URLWithString:url]];
+    [request setURL: [NSURL URLWithString: self.isCollect ? urlCollect : urlBatch]];
     [request setHTTPMethod:@"Post"];
     [request setHTTPBody:[self createPostData:parameters]];
-    
+    self.isCollect = YES;
+    NSString *userAgent = [NSString stringWithFormat:@"%@ %@",[UIDevice currentDevice].systemName,[UIDevice currentDevice].systemVersion];
+    [request setValue:userAgent forHTTPHeaderField:@"User-Agent"];
+    [request setValue:@"application/x-www-form-urlencoded; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
+        
     return request;
 }
 
