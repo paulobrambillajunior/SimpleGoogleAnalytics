@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B75054F1E85D12A0076D5E7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1B75054E1E85D12A0076D5E7 /* README.md */; };
 		1BDD17F11E79E69B004D8D45 /* ItemGA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD17EE1E79E69B004D8D45 /* ItemGA.m */; };
 		1BDD17F21E79E69B004D8D45 /* SimpleGoogleAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD17F01E79E69B004D8D45 /* SimpleGoogleAnalytics.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1B75054E1E85D12A0076D5E7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1B7505501E85D1380076D5E7 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		1B7505511E85D1380076D5E7 /* SimpleGoogleAnaltyticsForIOS.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleGoogleAnaltyticsForIOS.podspec; sourceTree = "<group>"; };
 		1BDD17E11E79E665004D8D45 /* libSimpleGoogleAnalytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSimpleGoogleAnalytics.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BDD17ED1E79E69B004D8D45 /* ItemGA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemGA.h; sourceTree = "<group>"; };
 		1BDD17EE1E79E69B004D8D45 /* ItemGA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemGA.m; sourceTree = "<group>"; };
@@ -45,6 +49,7 @@
 		1BDD17D81E79E665004D8D45 = {
 			isa = PBXGroup;
 			children = (
+				1B75054E1E85D12A0076D5E7 /* README.md */,
 				1BDD17E31E79E665004D8D45 /* SimpleGoogleAnalytics */,
 				1BDD17E21E79E665004D8D45 /* Products */,
 			);
@@ -61,6 +66,8 @@
 		1BDD17E31E79E665004D8D45 /* SimpleGoogleAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				1B7505501E85D1380076D5E7 /* LICENSE.txt */,
+				1B7505511E85D1380076D5E7 /* SimpleGoogleAnaltyticsForIOS.podspec */,
 				1BDD17ED1E79E69B004D8D45 /* ItemGA.h */,
 				1BDD17EE1E79E69B004D8D45 /* ItemGA.m */,
 				1BDD17EF1E79E69B004D8D45 /* SimpleGoogleAnalytics.h */,
@@ -127,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B75054F1E85D12A0076D5E7 /* README.md in Sources */,
 				1BDD17F11E79E69B004D8D45 /* ItemGA.m in Sources */,
 				1BDD17F21E79E69B004D8D45 /* SimpleGoogleAnalytics.m in Sources */,
 			);
@@ -262,6 +270,7 @@
 				1BDD17EC1E79E665004D8D45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
