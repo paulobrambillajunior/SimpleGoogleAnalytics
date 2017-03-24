@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   #
 
   s.license      = "GNU, Version 3"
-  # s.license      = { :type => "GNU", :file => "/SimpleGoogleAnalytics/LICENSE" }
+  s.license      = { :type => "GNU", :file => "LICENSE.txt" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
