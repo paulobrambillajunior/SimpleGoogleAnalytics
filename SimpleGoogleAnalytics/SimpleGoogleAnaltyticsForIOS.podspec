@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                        SimpleGoogleAnalytics is an HTTP networking library send message to Google Analytics in Objective-c.
                    DESC
 
-  s.homepage     = "https://github.com/paulobrambillajunior/SimpleGoogleAnalytics.git"
+  s.homepage     = "https://github.com/paulobrambillajunior/SimpleGoogleAnalytics"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
