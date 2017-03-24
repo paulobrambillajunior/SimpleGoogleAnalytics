@@ -26,8 +26,8 @@
 
 /* Begin PBXFileReference section */
 		1B75054E1E85D12A0076D5E7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		1B7505501E85D1380076D5E7 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		1B7505511E85D1380076D5E7 /* SimpleGoogleAnaltyticsForIOS.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleGoogleAnaltyticsForIOS.podspec; sourceTree = "<group>"; };
+		1B7505521E85DBF00076D5E7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1BDD17E11E79E665004D8D45 /* libSimpleGoogleAnalytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSimpleGoogleAnalytics.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BDD17ED1E79E69B004D8D45 /* ItemGA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemGA.h; sourceTree = "<group>"; };
 		1BDD17EE1E79E69B004D8D45 /* ItemGA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemGA.m; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		1BDD17E31E79E665004D8D45 /* SimpleGoogleAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				1B7505501E85D1380076D5E7 /* LICENSE.txt */,
+				1B7505521E85DBF00076D5E7 /* LICENSE */,
 				1B7505511E85D1380076D5E7 /* SimpleGoogleAnaltyticsForIOS.podspec */,
 				1BDD17ED1E79E69B004D8D45 /* ItemGA.h */,
 				1BDD17EE1E79E69B004D8D45 /* ItemGA.m */,
