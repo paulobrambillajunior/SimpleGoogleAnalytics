@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B75054F1E85D12A0076D5E7 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1B75054E1E85D12A0076D5E7 /* README.md */; };
 		1BDD17F11E79E69B004D8D45 /* ItemGA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD17EE1E79E69B004D8D45 /* ItemGA.m */; };
 		1BDD17F21E79E69B004D8D45 /* SimpleGoogleAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD17F01E79E69B004D8D45 /* SimpleGoogleAnalytics.m */; };
 /* End PBXBuildFile section */
@@ -134,7 +133,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B75054F1E85D12A0076D5E7 /* README.md in Sources */,
 				1BDD17F11E79E69B004D8D45 /* ItemGA.m in Sources */,
 				1BDD17F21E79E69B004D8D45 /* SimpleGoogleAnalytics.m in Sources */,
 			);
