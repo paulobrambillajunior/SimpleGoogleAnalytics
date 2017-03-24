@@ -22,7 +22,7 @@ SimpleGoogleAnalytics is an HTTP networking library send message to Google Analy
 
 ## Communication
 
-- If you **need help or suggest or general question**, use [Email](paulobrambillajunior@gmail.com).
+- If you **need help or suggest or general question**, use email paulobrambillajunior@gmail.com.
 - If you **found a bug**, open an issue.
 - If you **have a feature request**, open an issue.
 - If you **want to contribute**, submit a pull request.
@@ -157,7 +157,7 @@ ItemGA *item = [[ItemGA alloc] initWithCodEnumParameterGA:SESSION_CONTROL_GAPARA
 ```
 
 ### GAParameterEnum
-Enumerated listing the Google Analytics parameters to use along with the instantiation of the `ItemGA` class and the `getValueEnumGAParameter` method.
+Enumerated listing the Google Analytics parameters to use along with the instantiation of the `ItemGA` class and the `getValueEnumGAParameter` method. For more details on each parameter go to the link [Protocol Parameter Reference](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters?hl=en).
 
 ```objective-c
 typedef NS_ENUM(NSInteger, GAParametersEnum){
