@@ -47,7 +47,7 @@ platform :ios, '7.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'SimpleGoogleAnalytics', '~> 0.0.1'
+    pod 'SimpleGoogleAnalyticsForIOS', '~> 0.0.1'
 end
 ```
 
