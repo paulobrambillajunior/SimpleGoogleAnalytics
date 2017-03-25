@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "SimpleGoogleAnaltyticsForIOS"
-  s.version      = "0.0.2"
+  s.name         = "SimpleGoogleAnalyticsForIOS"
+  s.version      = "0.0.1"
   s.summary      = "SimpleGoogleAnalytics to send message to Google Analytics."
 
   # This description is used to generate tags and improve search results.
@@ -95,7 +95,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/paulobrambillajunior/SimpleGoogleAnalytics.git", :tag => "0.0.2" }
+  s.source       = { :git => "https://github.com/paulobrambillajunior/SimpleGoogleAnalytics.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
