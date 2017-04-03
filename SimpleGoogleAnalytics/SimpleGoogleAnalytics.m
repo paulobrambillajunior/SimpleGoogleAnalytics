@@ -107,6 +107,7 @@ NSUInteger bytes;
         [_queue setQualityOfService:NSQualityOfServiceUserInteractive];
         [_queue setMaxConcurrentOperationCount:1000];
         paramtersGA = [self populateParametersGA];
+        _isCollect = YES;
     }
     return self;
 }
