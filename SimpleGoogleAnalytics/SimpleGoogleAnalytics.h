@@ -21,7 +21,7 @@
 //  along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
 
 #import <Foundation/Foundation.h>
-#import "itemGA.h"
+#import "ItemGA.h"
 
 typedef void(^CallBackSend) (NSData *_Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable erro);
 typedef void(^CallBackError) (NSError *_Nullable erro);
